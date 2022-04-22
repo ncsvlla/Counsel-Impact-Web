@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(HomepageIMG/CIW\ Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.75s;
+    background: #888585
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.navbar-brand{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+.intro{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.intro h1{
+    font-size: 95px;
+}
+.intro p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.TeamCompGuide-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 13px 34px;
+    font-size: 13px;
+    background-color: black;
+    position: relative;
+    cursor: pointer;
+}
+.RecommendedTeamComps-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 13px 34px;
+    font-size: 13px;
+    background-color: black;
+    position: relative;
+    cursor: pointer;
+}
+.TeamCompGuide-btn:hover{
+    border: 1px solid gold;
+    background: goldenrod;
+    transition: 1.5s;
+}
+.RecommendedTeamComps-btn:hover{
+    border: 1px solid gold;
+    background: goldenrod;
+    transition: 1.5s;
+}
+.footer{    
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer.h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 100;
+
+}
